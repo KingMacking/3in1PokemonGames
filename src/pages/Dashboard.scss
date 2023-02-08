@@ -1,0 +1,51 @@
+@import "../../node_modules/nes.css/css/nes.css";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+$font-nes: 'Press Start 2P', cursive;
+
+.dashboard-container {
+    background-image: url(https://cutewallpaper.org/28/dark-pokemon-forest-wallpaper/pokemon-anime-forest-background-posted-by-zoey-peltier.png);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .dashboard-gameslist {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .dashboard-title {
+            font-size: 35px;
+            margin: 30px 0 45px;
+        }
+        .dashboard-games{
+            display: flex;
+            justify-content: space-between;
+            width: 1200px;
+            margin-bottom: 40px;
+            .dashboard-game-link{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                transition: ease-in-out all 200ms;
+                .dashboard-game-title {
+                    text-align: center;
+                    color: black;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                img {
+                    width: 100%;
+                    image-rendering: pixelated;
+                }
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
