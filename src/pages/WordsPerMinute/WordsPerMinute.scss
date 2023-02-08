@@ -1,0 +1,42 @@
+@import "../../../node_modules/nes.css/css/nes.css";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+$font-nes: 'Press Start 2P', cursive;
+
+.wpm-container {
+    background-image: url(https://cutewallpaper.org/28/dark-pokemon-forest-wallpaper/pokemon-anime-forest-background-posted-by-zoey-peltier.png);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .wpm-header {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        gap: 20px;
+        width: 700px;
+    }
+    .wpm-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin-top: 30px;
+        width: 700px;
+        .wpm-img {
+            width: 300px;
+            image-rendering: pixelated;
+        }
+        .wpm-button {
+            margin-top: 15px;
+        }
+    }
+    .wpm-play {
+        margin-top: 30px;
+        width: 300px;
+        height: 100px;
+    }
+}
