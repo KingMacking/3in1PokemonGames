@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import './WordsPerMinute.scss'
 
 const POKEMONS = [
@@ -76,7 +77,10 @@ const WordsPerMinute = () => {
                     <button className="nes-btn is-primary wpm-button" type="submit">Enviar</button>
                 </form>
             ) : (
-                <button className="nes-btn is-primary wpm-play" onClick={() => setCrono(60)}>Jugar</button>
+                <>
+                    <button className="nes-btn is-primary wpm-play" onClick={() => setCrono(60)}>Jugar</button>
+                    <Link className='nes-btn is-warning wpm-play' to="/">Volver a inicio</Link>
+                </>
             )}
         </main>
     )

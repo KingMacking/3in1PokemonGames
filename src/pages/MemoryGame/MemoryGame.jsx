@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './MemoryGame.scss'
 
 const POKEMONS = [
@@ -56,6 +57,7 @@ const MemoryGame = () => {
                     <button onClick={() => location.reload()} className='nes-btn is-primary'>Volver a jugar</button>
                 </div>
             }
+            <Link className='nes-btn is-warning' to="/">Volver a inicio</Link>
         </main>
     )
 }
