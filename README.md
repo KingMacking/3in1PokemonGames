@@ -1,4 +1,4 @@
-# [_**SISTEMA DE ADMINISTRACION DE GIMNASIO**_](https://3in1pokegames.netlify.app "Live app")
+# [_**3 en 1 Juegos de pokemon**_](https://3in1pokegames.netlify.app "Live app")
 
 <p align='center'>
     🎮¡Visualiza la app haciendo click en la imagen!🎮
