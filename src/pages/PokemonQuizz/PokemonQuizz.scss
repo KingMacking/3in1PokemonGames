@@ -1,0 +1,34 @@
+@import "../../../node_modules/nes.css/css/nes.css";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+$font-nes: 'Press Start 2P', cursive;
+
+
+.pokequizz-container {
+    background-image: url(https://cutewallpaper.org/28/dark-pokemon-forest-wallpaper/pokemon-anime-forest-background-posted-by-zoey-peltier.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    font-family: $font-nes;
+    .pokequizz-form {
+        margin-bottom: 100px;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        background-color: white;
+        padding: 25px 30px 35px;
+    }
+    .pokequizz-img-pokemon{
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        margin-bottom: 100px;
+        border-radius: 20px;
+        width: 320px;
+        height: 320px;
+        img {
+            width: 100%;
+        }
+    }
+}
