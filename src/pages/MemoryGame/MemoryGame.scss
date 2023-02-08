@@ -1,0 +1,38 @@
+@import "../../../node_modules/nes.css/css/nes.css";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+$font-nes: 'Press Start 2P', cursive;
+
+.memorygame-container {
+    background-image: url(https://cutewallpaper.org/28/dark-pokemon-forest-wallpaper/pokemon-anime-forest-background-posted-by-zoey-peltier.png);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .memorygame-itemlist {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        border-radius: 20px;
+        list-style-type: none;
+        gap: 10px;
+        padding: 20px;
+        width: 700px;
+        .memorygame-item{
+            padding: 10px;
+            border: 1px solid white;
+            width: 100%;
+            border-radius: 20px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .haswon-container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+}
