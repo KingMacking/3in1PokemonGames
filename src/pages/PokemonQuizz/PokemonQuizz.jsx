@@ -53,7 +53,7 @@ const PokemonQuizz = () => {
     }
     
     return (
-        <div className="pokequizz-container">
+        <main className="pokequizz-container">
             <form className="pokequizz-form nes-container is-rounded" onSubmit={handleSubmit}>
                 <label for="name">Ingresa el nombre del pokemon</label>
                 <input autoFocus className={`nes-input ${correct && "is-success"} ${incorrect && "is-error"}`} type="text" id="name" name="pokemon"/>
@@ -61,14 +61,14 @@ const PokemonQuizz = () => {
                 {!correct ? <button className="nes-btn is-primary" type="submit">Adivinar</button> :
                     <>
                         <p className="nes-text is-success">¡Muy bien, el pokemon era {POKEMON[POKEID]}!</p>
-                        <button onClick={()=> location.reload} className="nes-btn is-success" type="submit">Volver a jugar</button>
+                        <button onClick={()=> location.reload()} className="nes-btn is-success" type="submit">Volver a jugar</button>
                     </>
                 }
             </form>
             <div className="pokequizz-img-pokemon">
                 <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${POKEID + 1}.png`} style={{imageRendering: "pixelated", filter: correct ? "" : "brightness(0) invert(1)"}}/>
             </div>
-        </div>
+        </main>
     )
 }
 export default PokemonQuizz

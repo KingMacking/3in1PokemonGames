@@ -6,8 +6,8 @@ $font-nes: 'Press Start 2P', cursive;
 .pokequizz-container {
     background-image: url(https://cutewallpaper.org/28/dark-pokemon-forest-wallpaper/pokemon-anime-forest-background-posted-by-zoey-peltier.png);
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
