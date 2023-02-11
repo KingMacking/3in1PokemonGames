@@ -4,7 +4,7 @@
     🎮¡Visualiza la app haciendo click en la imagen!🎮
 </p>
 <p align='center'>
-    <a href="https://3in1pokegames.netlify.app"><img height="80"src="https://raw.githubusercontent.com/KingMacking/3in1Games/master/public/pokeball.png"></a>
+    <a href="https://3in1pokegames.netlify.app"><img height="80"src="https://raw.githubusercontent.com/KingMacking/3in1PokemonGames/master/public/pokeball.png"></a>
 </p>
 
 ## 3 juegos en 1
@@ -45,7 +45,7 @@ Para probar la aplicación simplemente hay que entrar al link brindado arriba, d
 ## Instalación
 1. Clonar el repositorio
 ```sh
-git clone https://github.com/KingMacking/3in1Games.git
+git clone https://github.com/KingMacking/3in1PokemonGames.git
 ```
 2. Instalar las dependencias desde NPM
 ```sh
