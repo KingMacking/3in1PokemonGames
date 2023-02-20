@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import './PokemonQuizz.scss'
 
+//Names of pokemons, this should be requested from an API or a local .json file
 const POKEMON = [
     "bulbasaur",
     "ivysaur",
@@ -38,7 +39,7 @@ const POKEID = Math.floor(Math.random() * POKEMON.length)
 
 const PokemonQuizz = () => {
     const [correct, isCorrect] = useState(false)
-    const [incorrect, isIncorrect] = useState(false)
+    const [wrong, isWrong] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -46,10 +47,10 @@ const PokemonQuizz = () => {
     
         if(pokemon.value.toLowerCase() === POKEMON[POKEID]){
             isCorrect(true)
-            isIncorrect(false)
+            isWrong(false)
         } else {
             isCorrect(false)
-            isIncorrect(true)
+            isWrong(true)
         }
     }
     
@@ -57,8 +58,8 @@ const PokemonQuizz = () => {
         <main className="pokequizz-container">
             <form className="pokequizz-form nes-container is-rounded" onSubmit={handleSubmit}>
                 <label for="name">Ingresa el nombre del pokemon</label>
-                <input autoFocus className={`nes-input ${correct && "is-success"} ${incorrect && "is-error"}`} type="text" id="name" name="pokemon"/>
-                {incorrect && <p className="nes-text is-error">El pokemon ingresado es incorrecto</p>}
+                <input autoFocus className={`nes-input ${correct && "is-success"} ${wrong && "is-error"}`} type="text" id="name" name="pokemon"/>
+                {wrong && <p className="nes-text is-error">El pokemon ingresado es incorrecto</p>}
                 {!correct ?
                     <>
                         <button className="nes-btn is-primary" type="submit">Adivinar</button>

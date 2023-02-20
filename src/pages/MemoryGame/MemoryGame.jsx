@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './MemoryGame.scss'
 
+//Images of pokemons, this should be requested from an API or a local .json file
 const POKEMONS = [
     "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
     "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
@@ -35,6 +36,7 @@ const MemoryGame = () => {
     useEffect(()=>{
         guessed.length === POKEMONS.length && setHasWon(true)
     }, [guessed])
+
     return (
         <main className="memorygame-container">
             <ul className="memorygame-itemlist">

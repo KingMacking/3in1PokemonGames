@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import './WordsPerMinute.scss'
 
+//Names of pokemons, this should be requested from an API or a local .json file
 const POKEMONS = [
     "bulbasaur",
     "ivysaur",
